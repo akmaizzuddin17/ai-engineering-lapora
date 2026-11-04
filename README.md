@@ -61,8 +61,16 @@ prompts/      Versioned prompt templates
 - [Conceptual AI system map — ChatGPT (group, Part B)](docs/week1_system_map.png)
 - [Project scope — Lapora (individual, Part C)](docs/week1_project_scope.md)
 
+## Week 2 Documents
+
+- [Requirements specification — framing, scope, FR / NFR / RAI](docs/week2_requirements.md)
+- [Evaluation criteria](docs/week2_evaluation_criteria.md)
+- [V1 conceptual architecture](docs/week2_architecture_v1.png) (editable: `docs/week2_architecture_v1.drawio`)
+- [Architecture decisions (ADR) and traceability matrix](docs/week2_architecture_decisions.md)
+
 ## Weekly Progress
 
 | Week | Focus | Deliverable | Status |
 |------|-------|-------------|--------|
 | W1 | System map + project scope | README + docs | ✅ |
+| W2 | Requirements, evaluation criteria, V1 architecture | Requirements + evaluation + architecture docs | ✅ |
