@@ -1,0 +1,62 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-14T10:11:16.693548+00:00",
+  "data_type": "documents_taxonomy_arch",
+  "configuration": {
+    "slug": "taxonomy_arch",
+    "relative_path": "SSMxT2022_Architecture_Document.pdf.txt",
+    "title": "SSMxT 2022 Architecture Document (text conversion of the PDF)",
+    "owner": "Suruhanjaya Syarikat Malaysia (SSM)",
+    "url": "https://www.ssm.com.my/Pages/Register_Business_Company_LLP/Company/document/SSMxT2022_Architecture_Document.pdf",
+    "page_source": "txt-page-header",
+    "page_marker": "^SSMxT_2022 Architecture Document[ \\t]*\\n[ \\t]*(\\d{1,3})[ \\t]*$",
+    "header_regexes": [],
+    "version_regex": "SSMxT_2022\\s?v\\d+\\.\\d+",
+    "declared_version": "Taxonomy SSMxT_2022 v1.0 (as stated in the document preface); document date not stated",
+    "access_rights": "Public SSM document (URL). This is a text conversion supplied by the student, not the original PDF. Redistribution terms not verified: raw file not committed.",
+    "source_id": "S03",
+    "chunk_size": 500,
+    "method": "paragraph-page"
+  },
+  "processing_method": "paragraph-page text chunks of 500 characters; page recovery=txt-page-header; header rules=0; table-of-contents pages flagged, not deleted",
+  "sources": [
+    {
+      "path": "/content/week3_project/data/raw/SSMxT2022_Architecture_Document.pdf.txt",
+      "sha256": "a2d15a2f3b5ab3acd8b9a110caa99408cb03eb545c9d0944d964cb32ef510694"
+    }
+  ],
+  "outputs": [
+    "/content/week3_project/data/pipeline_v1/documents_taxonomy_arch/prepared_text.jsonl"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "/content/week3_project/data/raw/SSMxT2022_Architecture_Document.pdf.txt",
+      "output": "/content/week3_project/data/pipeline_v1/documents_taxonomy_arch/prepared_text.jsonl"
+    }
+  ],
+  "inspection": {
+    "source": "SSMxT2022_Architecture_Document.pdf.txt",
+    "pages": 111,
+    "characters": 187449,
+    "low_text_pages": [
+      1
+    ],
+    "toc_pages": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "validation": {
+    "output_count": 1,
+    "output_sha256": [
+      "6df915c0fa6d2e9f6b39dee7945857284ddc2fd70fee5fee0cf68ca3654a710a"
+    ],
+    "output_bytes": [
+      363378
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}

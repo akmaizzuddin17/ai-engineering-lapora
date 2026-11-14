@@ -68,9 +68,20 @@ prompts/      Versioned prompt templates
 - [V1 conceptual architecture](docs/week2_architecture_v1.png) (editable: `docs/week2_architecture_v1.drawio`)
 - [Architecture decisions (ADR) and traceability matrix](docs/week2_architecture_decisions.md)
 
+## Week 3 Documents
+
+- [Data pipeline notebook (Colab)](notebooks/week3_pipeline.ipynb)
+- [Data inventory](docs/week3_data_inventory.md)
+- [Pipeline diagram](docs/week3_pipeline_diagram.png)
+- [Pipeline decisions](docs/week3_pipeline_decisions.md)
+- [Lineage manifest](data/week3_manifest.json) and [pipeline manifests](data/pipeline_v1/)
+
+Raw SSM documents and prepared text are not committed (redistribution not verified). To reproduce: upload the three source files to `data/raw/` in Colab and run the notebook top to bottom.
+
 ## Weekly Progress
 
 | Week | Focus | Deliverable | Status |
 |------|-------|-------------|--------|
 | W1 | System map + project scope | README + docs | ✅ |
 | W2 | Requirements, evaluation criteria, V1 architecture | Requirements + evaluation + architecture docs | ✅ |
+| W3 | V1 data pipeline (PDF/TXT) | Notebook + inventory + diagram + decisions + manifests | ✅ |

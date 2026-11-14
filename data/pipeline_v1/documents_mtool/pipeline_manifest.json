@@ -1,0 +1,66 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-14T10:11:16.671757+00:00",
+  "data_type": "documents_mtool",
+  "configuration": {
+    "slug": "mtool",
+    "relative_path": "User_manual_mTool_v2_FS2016.pdf.txt",
+    "title": "mTool User Manual - Financial Statements (text conversion of the PDF)",
+    "owner": "Suruhanjaya Syarikat Malaysia (SSM)",
+    "url": "https://www.ssm.com.my/Pages/Register_Business_Company_LLP/Company/document/User_manual_mTool_v2_FS2016.pdf",
+    "page_source": "txt-page-header",
+    "page_marker": "^User Manual mTool [–-] Financial Statements \\(FS\\)[ \\t]*\\nVersion [\\d.]+ \\w+ \\d{4} Page \\| (\\d+)[ \\t]*$",
+    "header_regexes": [],
+    "version_regex": "Version\\s+[\\d.]+\\s+\\w+\\s+\\d{4}",
+    "declared_version": "Version 2.4 September 2024",
+    "access_rights": "Public SSM document (URL). This is a text conversion supplied by the student, not the original PDF. Redistribution terms not verified: raw file not committed.",
+    "source_id": "S02",
+    "chunk_size": 500,
+    "method": "paragraph-page"
+  },
+  "processing_method": "paragraph-page text chunks of 500 characters; page recovery=txt-page-header; header rules=0; table-of-contents pages flagged, not deleted",
+  "sources": [
+    {
+      "path": "/content/week3_project/data/raw/User_manual_mTool_v2_FS2016.pdf.txt",
+      "sha256": "157e9fabaf783e2f404563ce8036666abb065628fedb46982d2766ab1f0d1db8"
+    }
+  ],
+  "outputs": [
+    "/content/week3_project/data/pipeline_v1/documents_mtool/prepared_text.jsonl"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "/content/week3_project/data/raw/User_manual_mTool_v2_FS2016.pdf.txt",
+      "output": "/content/week3_project/data/pipeline_v1/documents_mtool/prepared_text.jsonl"
+    }
+  ],
+  "inspection": {
+    "source": "User_manual_mTool_v2_FS2016.pdf.txt",
+    "pages": 105,
+    "characters": 63550,
+    "low_text_pages": [
+      24,
+      25,
+      26,
+      46,
+      98
+    ],
+    "toc_pages": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "validation": {
+    "output_count": 1,
+    "output_sha256": [
+      "73760a39101d1dc2cb001d91a4ea3efb027496a486efab8eae43a3954bcb415d"
+    ],
+    "output_bytes": [
+      122292
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}

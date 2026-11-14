@@ -1,0 +1,64 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-14T10:11:16.662287+00:00",
+  "data_type": "documents_faq",
+  "configuration": {
+    "slug": "faq",
+    "relative_path": "FAQ-MBRS.pdf",
+    "title": "MBRS Frequently Asked Questions",
+    "owner": "Suruhanjaya Syarikat Malaysia (SSM)",
+    "url": "https://www.ssm.com.my/Pages/Register_Business_Company_LLP/Company/document/FAQ-MBRS.pdf",
+    "page_source": "pdf-native",
+    "page_marker": null,
+    "header_regexes": [
+      "^Malaysian Business Reporting System \\(MBRS\\) FAQs$",
+      "^Version \\d+\\.\\d+ \\w+ \\d{4} \\d+$"
+    ],
+    "version_regex": "Version\\s+[\\d.]+\\s+\\w+\\s+\\d{4}",
+    "declared_version": "Version 2.0 Jun 2022 (file title: update v2 31052022); 39 of 42 page headers read 'Version 1.0 Jun 2022'",
+    "access_rights": "Public SSM document (URL). Redistribution terms not verified: raw file not committed.",
+    "source_id": "S01",
+    "chunk_size": 500,
+    "method": "paragraph-page"
+  },
+  "processing_method": "paragraph-page text chunks of 500 characters; page recovery=pdf-native; header rules=2; table-of-contents pages flagged, not deleted",
+  "sources": [
+    {
+      "path": "/content/week3_project/data/raw/FAQ-MBRS.pdf",
+      "sha256": "ef1fb2647ca1becc2491df33193294af7e242615bb5b6ff8f73a785f08d61c99"
+    }
+  ],
+  "outputs": [
+    "/content/week3_project/data/pipeline_v1/documents_faq/prepared_text.jsonl"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "/content/week3_project/data/raw/FAQ-MBRS.pdf",
+      "output": "/content/week3_project/data/pipeline_v1/documents_faq/prepared_text.jsonl"
+    }
+  ],
+  "inspection": {
+    "source": "FAQ-MBRS.pdf",
+    "pages": 43,
+    "characters": 58106,
+    "low_text_pages": [
+      1
+    ],
+    "toc_pages": [
+      2,
+      3,
+      4
+    ]
+  },
+  "validation": {
+    "output_count": 1,
+    "output_sha256": [
+      "0b4b37f6a86deef34f1663f0a969472e715fda8ab6f29e03e579a918b4c00f5c"
+    ],
+    "output_bytes": [
+      105173
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}

@@ -1,0 +1,45 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-14T10:11:12.984956+00:00",
+  "records": [
+    {
+      "source_id": "S01",
+      "source_filename": "FAQ-MBRS.pdf",
+      "source_sha256": "ef1fb2647ca1becc2491df33193294af7e242615bb5b6ff8f73a785f08d61c99",
+      "source_url": "https://www.ssm.com.my/Pages/Register_Business_Company_LLP/Company/document/FAQ-MBRS.pdf",
+      "source_owner": "Suruhanjaya Syarikat Malaysia (SSM)",
+      "prepared_output": "data/processed/prepared_text_S01_faq.jsonl",
+      "prepared_sha256": "0b4b37f6a86deef34f1663f0a969472e715fda8ab6f29e03e579a918b4c00f5c",
+      "processing_note": "paragraph-page text chunks of 500 characters; page recovery=pdf-native; header rules=2; table-of-contents pages flagged, not deleted",
+      "source_version": "Version 2.0 Jun 2022 (file title: update v2 31052022); 39 of 42 page headers read 'Version 1.0 Jun 2022' [as declared in the document; not independently verified with SSM]",
+      "access_rights": "Public SSM document (URL). Redistribution terms not verified: raw file not committed.",
+      "status": "Prepared; quality review pending"
+    },
+    {
+      "source_id": "S02",
+      "source_filename": "User_manual_mTool_v2_FS2016.pdf.txt",
+      "source_sha256": "157e9fabaf783e2f404563ce8036666abb065628fedb46982d2766ab1f0d1db8",
+      "source_url": "https://www.ssm.com.my/Pages/Register_Business_Company_LLP/Company/document/User_manual_mTool_v2_FS2016.pdf",
+      "source_owner": "Suruhanjaya Syarikat Malaysia (SSM)",
+      "prepared_output": "data/processed/prepared_text_S02_mtool.jsonl",
+      "prepared_sha256": "73760a39101d1dc2cb001d91a4ea3efb027496a486efab8eae43a3954bcb415d",
+      "processing_note": "paragraph-page text chunks of 500 characters; page recovery=txt-page-header; header rules=0; table-of-contents pages flagged, not deleted",
+      "source_version": "Version 2.4 September 2024 [as declared in the document; not independently verified with SSM]",
+      "access_rights": "Public SSM document (URL). This is a text conversion supplied by the student, not the original PDF. Redistribution terms not verified: raw file not committed.",
+      "status": "Prepared; quality review pending"
+    },
+    {
+      "source_id": "S03",
+      "source_filename": "SSMxT2022_Architecture_Document.pdf.txt",
+      "source_sha256": "a2d15a2f3b5ab3acd8b9a110caa99408cb03eb545c9d0944d964cb32ef510694",
+      "source_url": "https://www.ssm.com.my/Pages/Register_Business_Company_LLP/Company/document/SSMxT2022_Architecture_Document.pdf",
+      "source_owner": "Suruhanjaya Syarikat Malaysia (SSM)",
+      "prepared_output": "data/processed/prepared_text_S03_taxonomy_arch.jsonl",
+      "prepared_sha256": "6df915c0fa6d2e9f6b39dee7945857284ddc2fd70fee5fee0cf68ca3654a710a",
+      "processing_note": "paragraph-page text chunks of 500 characters; page recovery=txt-page-header; header rules=0; table-of-contents pages flagged, not deleted",
+      "source_version": "Taxonomy SSMxT_2022 v1.0 (as stated in the document preface); document date not stated [as declared in the document; not independently verified with SSM]",
+      "access_rights": "Public SSM document (URL). This is a text conversion supplied by the student, not the original PDF. Redistribution terms not verified: raw file not committed.",
+      "status": "Prepared; quality review pending"
+    }
+  ]
+}

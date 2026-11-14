@@ -18,3 +18,7 @@ __pycache__/
 # Vector store / caches
 chroma/
 *.faiss
+
+# Prepared text chunks (derived from the raw SSM documents; regenerate with notebooks/week3_pipeline.ipynb)
+data/processed/
+data/pipeline_v1/**/*.jsonl
