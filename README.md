@@ -78,6 +78,12 @@ prompts/      Versioned prompt templates
 
 Raw SSM documents and prepared text are not committed (redistribution not verified). To reproduce: upload the three source files to `data/raw/` in Colab and run the notebook top to bottom.
 
+## Week 4 Documents
+
+- [Data Quality & Bias Report](docs/week4_data_quality_report.md)
+- **Quality-gate decision: GO WITH CONDITIONS** (prepared guidance text S01–S03, internal use, before embeddings)
+- Unresolved actions: (1) re-chunk with sentence-aware splitting and re-run rule V2 (252 mid-word cuts, including the FAQ "Other" rule); (2) confirm FAQ version, newer SSM versions and reuse rights; (3) add the SSMxT concept list as a new audited source.
+
 ## Weekly Progress
 
 | Week | Focus | Deliverable | Status |
@@ -85,3 +91,4 @@ Raw SSM documents and prepared text are not committed (redistribution not verifi
 | W1 | System map + project scope | README + docs | ✅ |
 | W2 | Requirements, evaluation criteria, V1 architecture | Requirements + evaluation + architecture docs | ✅ |
 | W3 | V1 data pipeline (PDF/TXT) | Notebook + inventory + diagram + decisions + manifests | ✅ |
+| W4 | Data quality and bias audit | Data Quality & Bias Report (GO WITH CONDITIONS) | ✅ |
