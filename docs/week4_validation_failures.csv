@@ -1,0 +1,344 @@
+rule_id,rule,chunk_id,record_id,source_id,page,char_count,decision,text_preview
+R5,Content chunk >= 40 characters,125,S01-0126,S01,40,22,Review,d) Others (if any) PDF
+R5,Content chunk >= 40 characters,161,S02-0027,S02,8,23,Review, respective entry points
+R5,Content chunk >= 40 characters,184,S02-0050,S02,26,9,Review,Figure 25
+R5,Content chunk >= 40 characters,202,S02-0068,S02,34,34,Review,will appear as shown in Figure 32.
+R5,Content chunk >= 40 characters,260,S02-0126,S02,67,2,Review,he
+R5,Content chunk >= 40 characters,265,S02-0131,S02,69,2,Review,y.
+R5,Content chunk >= 40 characters,296,S02-0162,S02,93,9,Review, template.
+R5,Content chunk >= 40 characters,361,S03-0051,S03,11,5,Review,"ns"")."
+R5,Content chunk >= 40 characters,438,S03-0128,S03,30,38,Review,sions – Explicit and Typed dimensions.
+R5,Content chunk >= 40 characters,454,S03-0144,S03,35,5,Review,D.xml
+R5,Content chunk >= 40 characters,479,S03-0169,S03,41,19,Review,172 measurement 176
+R5,Content chunk >= 40 characters,541,S03-0231,S03,57,1,Review,:
+R5,Content chunk >= 40 characters,576,S03-0266,S03,65,26,Review,les used in SSMxT_2022v1.0
+R5,Content chunk >= 40 characters,591,S03-0281,S03,68,25,Review,ould be based on at least
+R5,Content chunk >= 40 characters,636,S03-0326,S03,81,22,Review,fined in section 2.9.8
+R5,Content chunk >= 40 characters,672,S03-0362,S03,91,4,Review,bels
+R5,Content chunk >= 40 characters,716,S03-0406,S03,103,33,Review,on identifier for the entry point
+R5,Content chunk >= 40 characters,735,S03-0425,S03,108,3,Review, the
+R5,Content chunk >= 40 characters,740,S03-0430,S03,109,30,Review, associate facts that cannot be
+R6,No word cut at a chunk boundary,4,S01-0005,S01,2,500,Hard fail (pipeline defect),tallation of mTool .........................................
+R6,No word cut at a chunk boundary,7,S01-0008,S01,2,499,Hard fail (pipeline defect),ng error message appears ............................. 14 2.
+R6,No word cut at a chunk boundary,15,S01-0016,S01,3,451,Hard fail (pipeline defect),e Rectification Application? .............................. 
+R6,No word cut at a chunk boundary,38,S01-0039,S01,9,174,Hard fail (pipeline defect),"view • Auditors report to members * Excluding Banking, Finan"
+R6,No word cut at a chunk boundary,92,S01-0093,S01,30,391,Hard fail (pipeline defect),oo. 2.3.4.17 Can we use PDF and copy paste all the informati
+R6,No word cut at a chunk boundary,96,S01-0097,S01,31,49,Hard fail (pipeline defect),tor Details No Yes No 15 Tool Updates Yes Yes Yes
+R6,No word cut at a chunk boundary,124,S01-0125,S01,40,499,Hard fail (pipeline defect),ing company in Malaysia c) Full company structure d) Others 
+R6,No word cut at a chunk boundary,127,S01-0128,S01,41,500,Hard fail (pipeline defect),ef from requirements as to form and contents of financial st
+R6,No word cut at a chunk boundary,128,S01-0129,S01,41,310,Hard fail (pipeline defect),y) PDF 14 Application for extension of time to lodge annual 
+R6,No word cut at a chunk boundary,130,S01-0131,S01,42,394,Hard fail (pipeline defect),rt PDF 20 Annual Return for Companies having Share Capital A
+R6,No word cut at a chunk boundary,133,S01-0134,S01,43,142,Hard fail (pipeline defect),ve business relations and lead to a range of benefits. XBRL 
+R6,No word cut at a chunk boundary,139,S02-0005,S02,2,499,Hard fail (pipeline defect), 4.1.2 Toolbox..............................................
+R6,No word cut at a chunk boundary,143,S02-0009,S02,3,499,Hard fail (pipeline defect), 6.2.2 Selective Auto Tag...................................
+R6,No word cut at a chunk boundary,156,S02-0022,S02,6,500,Hard fail (pipeline defect),l key features of MBRS preparation tool are provided to faci
+R6,No word cut at a chunk boundary,157,S02-0023,S02,6,175,Hard fail (pipeline defect),laysian Private Entities Reporting Standards (MPERS) 3. FS-C
+R6,No word cut at a chunk boundary,159,S02-0025,S02,7,352,Hard fail (pipeline defect),ies are allowed to submit FS-FC once granted approval for th
+R6,No word cut at a chunk boundary,161,S02-0027,S02,8,23,Hard fail (pipeline defect), respective entry points
+R6,No word cut at a chunk boundary,167,S02-0033,S02,13,159,Hard fail (pipeline defect),eate Filing” on the Introduction Page. The Filing Informatio
+R6,No word cut at a chunk boundary,169,S02-0035,S02,14,138,Hard fail (pipeline defect),"umber is present). 1. In filing information page, User has t"
+R6,No word cut at a chunk boundary,173,S02-0039,S02,17,191,Hard fail (pipeline defect),late. The mTool will show the Content Page as shown in Figur
+R6,No word cut at a chunk boundary,175,S02-0041,S02,18,464,Hard fail (pipeline defect)," current year column, to complete the XBRL file. 1. Browse r"
+R6,No word cut at a chunk boundary,177,S02-0043,S02,19,217,Hard fail (pipeline defect),"r While preparing XBRL file, you may wish to save your work "
+R6,No word cut at a chunk boundary,180,S02-0046,S02,21,500,Hard fail (pipeline defect),nd loaded in the mTool is displayed. Please refer to section
+R6,No word cut at a chunk boundary,181,S02-0047,S02,21,186,Hard fail (pipeline defect),ill appear on the right panel as shown in Figure 23. Please 
+R6,No word cut at a chunk boundary,186,S02-0052,S02,27,500,Hard fail (pipeline defect),ment Properties: Shows the characteristics and the XBRL prop
+R6,No word cut at a chunk boundary,187,S02-0053,S02,27,70,Hard fail (pipeline defect),e of Accounting Standard e.g. International Accounting Stand
+R6,No word cut at a chunk boundary,193,S02-0059,S02,30,256,Hard fail (pipeline defect),xonomy elements column: Taxonomy elements are in the leftmo
+R6,No word cut at a chunk boundary,196,S02-0062,S02,31,297,Hard fail (pipeline defect),rent year and prior year. The year appears according to the 
+R6,No word cut at a chunk boundary,198,S02-0064,S02,32,70,Hard fail (pipeline defect),t of Financial Statements in the following two ways. Taxonom
+R6,No word cut at a chunk boundary,200,S02-0066,S02,33,131,Hard fail (pipeline defect),pt you a warning message for possible loss of data when you 
+R6,No word cut at a chunk boundary,205,S02-0071,S02,36,242,Hard fail (pipeline defect),emplates (if required) to be similar to the Financial Statem
+R6,No word cut at a chunk boundary,210,S02-0076,S02,39,129,Hard fail (pipeline defect),ss. The source document can be used to extract numeric as we
+R6,No word cut at a chunk boundary,214,S02-0080,S02,42,137,Hard fail (pipeline defect),tors 6.2.1 Basic Auto Tag 1. Import the source document. 2. 
+R6,No word cut at a chunk boundary,216,S02-0082,S02,43,499,Hard fail (pipeline defect)," open in full view. While in detached mode, click Attach to "
+R6,No word cut at a chunk boundary,223,S02-0089,S02,47,500,Hard fail (pipeline defect),"ns within tables, displaying the Company level columns befor"
+R6,No word cut at a chunk boundary,224,S02-0090,S02,47,447,Hard fail (pipeline defect),timise the results from Auto Tag and drag-and-drop (by row) 
+R6,No word cut at a chunk boundary,226,S02-0092,S02,48,489,Hard fail (pipeline defect),hen you perform Auto Tag on templates which already contain 
+R6,No word cut at a chunk boundary,229,S02-0095,S02,49,153,Hard fail (pipeline defect),y labels and the values will aggregate and get populated in 
+R6,No word cut at a chunk boundary,233,S02-0099,S02,52,453,Hard fail (pipeline defect),"e new value with existing value, but footnote will not be cr"
+R6,No word cut at a chunk boundary,235,S02-0101,S02,53,230,Hard fail (pipeline defect), to the elements against which a match is found. The prior y
+R6,No word cut at a chunk boundary,237,S02-0103,S02,54,175,Hard fail (pipeline defect),rrow keys Allow for selection of table rows in the source do
+R6,No word cut at a chunk boundary,242,S02-0108,S02,58,499,Hard fail (pipeline defect),te information is provided. Validation can be done offline u
+R6,No word cut at a chunk boundary,245,S02-0111,S02,59,120,Hard fail (pipeline defect),"t captured. - In this case, user will be restricted during t"
+R6,No word cut at a chunk boundary,247,S02-0113,S02,60,500,Hard fail (pipeline defect),lts in MS Excel spreadsheet. ● Search: This is a function th
+R6,No word cut at a chunk boundary,248,S02-0114,S02,60,500,Hard fail (pipeline defect),"ckets beside the element name, you can see the date or perio"
+R6,No word cut at a chunk boundary,249,S02-0115,S02,60,219,Hard fail (pipeline defect),ror ID: This is the unique Error ID for the error shown. If 
+R6,No word cut at a chunk boundary,251,S02-0117,S02,61,167,Hard fail (pipeline defect),f information submitted within the XBRL file. 1. Click Revie
+R6,No word cut at a chunk boundary,258,S02-0124,S02,67,499,Hard fail (pipeline defect),ers to review the complete set of information submitted with
+R6,No word cut at a chunk boundary,260,S02-0126,S02,67,2,Hard fail (pipeline defect),he
+R6,No word cut at a chunk boundary,262,S02-0128,S02,68,500,Hard fail (pipeline defect),ncial Statements and generate XBRL file. 8.1 Toolbox The too
+R6,No word cut at a chunk boundary,263,S02-0129,S02,68,170,Hard fail (pipeline defect),nerate XBRL file This function is for you to validate and ge
+R6,No word cut at a chunk boundary,265,S02-0131,S02,69,2,Hard fail (pipeline defect),y.
+R6,No word cut at a chunk boundary,273,S02-0139,S02,76,169,Hard fail (pipeline defect),his function allows you to freeze a portion of the templates
+R6,No word cut at a chunk boundary,282,S02-0148,S02,84,500,Hard fail (pipeline defect),tiple line items in the AGM financial statements will be agg
+R6,No word cut at a chunk boundary,283,S02-0149,S02,84,59,Hard fail (pipeline defect),w you can view/edit and import/export the rules repository.
+R6,No word cut at a chunk boundary,286,S02-0152,S02,86,499,Hard fail (pipeline defect),"ing rule under one company, so that the mapping rule will be"
+R6,No word cut at a chunk boundary,293,S02-0159,S02,91,307,Hard fail (pipeline defect),ables and other receivables within financial statements can 
+R6,No word cut at a chunk boundary,296,S02-0162,S02,93,9,Hard fail (pipeline defect), template.
+R6,No word cut at a chunk boundary,303,S02-0169,S02,99,420,Hard fail (pipeline defect),ssigned. Server Enter the IP Address/URL of the Proxy server
+R6,No word cut at a chunk boundary,309,S02-0175,S02,104,236,Hard fail (pipeline defect),tained on mPortal. There are 14 dynamics drop down master’s 
+R6,No word cut at a chunk boundary,313,S03-0003,S03,2,500,Hard fail (pipeline defect),urn (AR). ➢ Financial Statements and Reports (FS); and ➢ Exe
+R6,No word cut at a chunk boundary,314,S03-0004,S03,2,124,Hard fail (pipeline defect),lan Stesen Sentral 5 Kuala Lumpur Sentral 50623 Kuala Lumpur
+R6,No word cut at a chunk boundary,319,S03-0009,S03,3,500,Hard fail (pipeline defect),solute and relative paths ..................................
+R6,No word cut at a chunk boundary,320,S03-0010,S03,3,500,Hard fail (pipeline defect),ing concepts schema wise ...................................
+R6,No word cut at a chunk boundary,324,S03-0014,S03,4,499,Hard fail (pipeline defect),itional XBRL Technologies ..................................
+R6,No word cut at a chunk boundary,326,S03-0016,S03,4,500,Hard fail (pipeline defect),ents .......................................................
+R6,No word cut at a chunk boundary,328,S03-0018,S03,4,500,Hard fail (pipeline defect),3 4.2.4 Extended link role (ELR) ...........................
+R6,No word cut at a chunk boundary,334,S03-0024,S03,5,499,Hard fail (pipeline defect),urn entry points ...........................................
+R6,No word cut at a chunk boundary,336,S03-0026,S03,5,292,Hard fail (pipeline defect),ary amounts.................................................
+R6,No word cut at a chunk boundary,338,S03-0028,S03,6,500,Hard fail (pipeline defect),n mTool.......................................33 Illustratio
+R6,No word cut at a chunk boundary,340,S03-0030,S03,6,416,Hard fail (pipeline defect),here domain [member] having dimension default arc role .....
+R6,No word cut at a chunk boundary,342,S03-0032,S03,7,500,Hard fail (pipeline defect),e Registrar of Businesses (ROB) in Malaysia. It is the sole 
+R6,No word cut at a chunk boundary,343,S03-0033,S03,7,500,Hard fail (pipeline defect),panies to prepare a set of XBRL filings in accordance with S
+R6,No word cut at a chunk boundary,344,S03-0034,S03,7,499,Hard fail (pipeline defect), link: https://www.ifrs.org/issued-standards/ifrs-taxonomy/i
+R6,No word cut at a chunk boundary,347,S03-0037,S03,8,500,Hard fail (pipeline defect),e architecture for SSMxT_2022v1.0 capable of accommodating f
+R6,No word cut at a chunk boundary,348,S03-0038,S03,8,500,Hard fail (pipeline defect),ally modular Taxonomy for every reporting domain and groupin
+R6,No word cut at a chunk boundary,349,S03-0039,S03,8,376,Hard fail (pipeline defect),ucts can be easily incorporate SSMxT_2022v1.0. • SSMxT_2022v
+R6,No word cut at a chunk boundary,351,S03-0041,S03,9,500,Hard fail (pipeline defect),s using MFRS; 2. MPERS Taxonomy: - for financial statements 
+R6,No word cut at a chunk boundary,352,S03-0042,S03,9,499,Hard fail (pipeline defect), points; a) Financial Statements (FS); a taxonomy containing
+R6,No word cut at a chunk boundary,355,S03-0045,S03,10,499,Hard fail (pipeline defect),ments and key financial indicators taxonomy Applicable to al
+R6,No word cut at a chunk boundary,357,S03-0047,S03,10,201,Hard fail (pipeline defect),me 1.5.2.2 Malaysian Private Entities Reporting Standard (MP
+R6,No word cut at a chunk boundary,360,S03-0050,S03,11,500,Hard fail (pipeline defect),ccounting standards i.e. MFRS and MPERS. In some circumstanc
+R6,No word cut at a chunk boundary,361,S03-0051,S03,11,5,Hard fail (pipeline defect),"ns"")."
+R6,No word cut at a chunk boundary,364,S03-0054,S03,12,499,Hard fail (pipeline defect), is. The valid and active entry point schema that must be us
+R6,No word cut at a chunk boundary,367,S03-0057,S03,13,500,Hard fail (pipeline defect),ts. • Taxonomy must be aligned with the disclosure requireme
+R6,No word cut at a chunk boundary,368,S03-0058,S03,13,421,Hard fail (pipeline defect),"g (terminology) as used in Standards and Acts, information t"
+R6,No word cut at a chunk boundary,370,S03-0060,S03,14,242,Hard fail (pipeline defect),"panies Act,1965 and Companies Act,2016, the sub-sub-folders "
+R6,No word cut at a chunk boundary,372,S03-0062,S03,15,499,Hard fail (pipeline defect),s for dimensional definition linkbases ▪ doc_ssmt-dei-ar-196
+R6,No word cut at a chunk boundary,377,S03-0067,S03,16,500,Hard fail (pipeline defect),"sa Malaysia language ▪ doc_en-ssmt-dei-_YYYY-MM-DD-{“ar1, ar"
+R6,No word cut at a chunk boundary,378,S03-0068,S03,16,490,Hard fail (pipeline defect)," language for ELRs; ▪ lab_rol_ssmt-dei-_YYYY-MM-DD-{“ar1, ar"
+R6,No word cut at a chunk boundary,385,S03-0075,S03,18,500,Hard fail (pipeline defect),"i-fs_YYYY-MM-DD-{“mfrs,mpers”}.xml are generic linkbase file"
+R6,No word cut at a chunk boundary,387,S03-0077,S03,18,500,Hard fail (pipeline defect),"i_YYYY-MM-DD-{“mfrs,mpers”}.xml are the modular presentation"
+R6,No word cut at a chunk boundary,388,S03-0078,S03,18,75,Hard fail (pipeline defect),re generic linkbase files that provide labels for ELRs in En
+R6,No word cut at a chunk boundary,390,S03-0080,S03,19,500,Hard fail (pipeline defect),hips for Key Financial Indicators as required under Companie
+R6,No word cut at a chunk boundary,391,S03-0081,S03,19,500,Hard fail (pipeline defect),"s English language ▪ ref_ssmt-dei-ee_YYYY-MM-DD{“mfrs,mpers”"
+R6,No word cut at a chunk boundary,394,S03-0084,S03,20,500,Hard fail (pipeline defect),r than related to accounting standards. It also includes ssm
+R6,No word cut at a chunk boundary,395,S03-0085,S03,20,500,Hard fail (pipeline defect),l IFRS reporting of the “base” IFRS taxonomy 2022 resource f
+R6,No word cut at a chunk boundary,396,S03-0086,S03,20,500,Hard fail (pipeline defect),s | ifrs | ifric | sic}_{“number”}_YYYY-MM-DD.xsd are modula
+R6,No word cut at a chunk boundary,397,S03-0087,S03,20,187,Hard fail (pipeline defect), that have dimensional relationships that are applicable to 
+R6,No word cut at a chunk boundary,399,S03-0089,S03,21,500,Hard fail (pipeline defect),ls in English language; and ii. ifrs_for_smes - is the core 
+R6,No word cut at a chunk boundary,400,S03-0090,S03,21,500,Hard fail (pipeline defect),lculation and definition linkbases of the IFRS for SMEs Stan
+R6,No word cut at a chunk boundary,401,S03-0091,S03,21,166,Hard fail (pipeline defect),"h language; and c) In the “fdn” folder, the file ssmt-fdn_YY"
+R6,No word cut at a chunk boundary,403,S03-0093,S03,22,500,Hard fail (pipeline defect),e included as mentioned below: o {pre | def}_ssmt-ar-1965_YY
+R6,No word cut at a chunk boundary,405,S03-0095,S03,22,477,Hard fail (pipeline defect),"panies Act, 1965 i. In the “fs” folder the filing related to"
+R6,No word cut at a chunk boundary,409,S03-0099,S03,23,457,Hard fail (pipeline defect),016 is the folder which contains schema and linkbases for Co
+R6,No word cut at a chunk boundary,411,S03-0101,S03,24,500,Hard fail (pipeline defect),e generic linkbase files that provide labels for ELRs in Bah
+R6,No word cut at a chunk boundary,412,S03-0102,S03,24,499,Hard fail (pipeline defect), in Bahasa Malaysia language o table-GL_en-ssmt-ar_YYYY-MM-D
+R6,No word cut at a chunk boundary,414,S03-0104,S03,24,244,Hard fail (pipeline defect),"guage; o doc_en-ssmt-ea_YYYY-MM-DD.xml {ea1, ea2….ea7} are t"
+R6,No word cut at a chunk boundary,416,S03-0106,S03,25,499,Hard fail (pipeline defect),"a_YYYY-MM-DD_role-{“unique role number”}.xml {ea1, ea2….ea7}"
+R6,No word cut at a chunk boundary,419,S03-0109,S03,25,122,Hard fail (pipeline defect),"t-fs_YYYY-MM-DD.xml {bnm, clbg, epc, fc and mfrs} is the lin"
+R6,No word cut at a chunk boundary,425,S03-0115,S03,27,500,Hard fail (pipeline defect),ase files that provide rendered output for ELRs ▪ table-GL_s
+R6,No word cut at a chunk boundary,426,S03-0116,S03,27,500,Hard fail (pipeline defect),ling related to key financial indicators will be included. T
+R6,No word cut at a chunk boundary,429,S03-0119,S03,28,500,Hard fail (pipeline defect),"t-kfi_YYYY-MM-DD_role-{“unique role number”}.xml {clbg, fc a"
+R6,No word cut at a chunk boundary,430,S03-0120,S03,28,500,Hard fail (pipeline defect),kbases relationships o For entry point file (mpers) imports 
+R6,No word cut at a chunk boundary,431,S03-0121,S03,28,374,Hard fail (pipeline defect),smt-kfi-mpers_YYYY-MM-DD.xml are the reference linkbase file
+R6,No word cut at a chunk boundary,434,S03-0124,S03,29,500,Hard fail (pipeline defect),"ancial statements, exemption applications, key financial ind"
+R6,No word cut at a chunk boundary,435,S03-0125,S03,29,450,Hard fail (pipeline defect), so as to increase the comparability of data collected. For 
+R6,No word cut at a chunk boundary,437,S03-0127,S03,30,499,Hard fail (pipeline defect), as line items. Dimensions are generally used to model tabul
+R6,No word cut at a chunk boundary,440,S03-0130,S03,31,347,Hard fail (pipeline defect),"arent, Associate, Subsidiaries etc. (referred as domain memb"
+R6,No word cut at a chunk boundary,443,S03-0133,S03,32,55,Hard fail (pipeline defect),"r, Nationality etc. can be reported for every director."
+R6,No word cut at a chunk boundary,445,S03-0135,S03,33,416,Hard fail (pipeline defect), concept “company address” may consist of the following tupl
+R6,No word cut at a chunk boundary,447,S03-0137,S03,34,500,Hard fail (pipeline defect),en there is transactional data which may run into thousand p
+R6,No word cut at a chunk boundary,449,S03-0139,S03,34,477,Hard fail (pipeline defect),y/ YYYY-MM-DD /def/ext/full_ifrs/full_ifrs-cor_ YYYY-MM-DD.x
+R6,No word cut at a chunk boundary,453,S03-0143,S03,35,500,Hard fail (pipeline defect),016/ar/ENTRY_POINT/ ref_ssmt- ENTRY_POINT_YYYY-MM-DD.xml htt
+R6,No word cut at a chunk boundary,456,S03-0146,S03,36,500,Hard fail (pipeline defect),brl.ssm.com.my/taxonomy/ YYYY-MM-DD/def/ic/ssmt-mpers-cor /r
+R6,No word cut at a chunk boundary,457,S03-0147,S03,36,500,Hard fail (pipeline defect),nd extenders. 2.4 Discoverable Taxonomy Set (DTS) SSMxT_2022
+R6,No word cut at a chunk boundary,460,S03-0150,S03,37,500,Hard fail (pipeline defect),http://xbrl.ssm.com.my/taxonomy/YYYY-MMDD/rep/ssm/ ca-2016/
+R6,No word cut at a chunk boundary,462,S03-0152,S03,37,500,Hard fail (pipeline defect),5a_YYYY-MMDD_entry_point.xsdhttp://xbrl.ssm.com.my/taxonomy
+R6,No word cut at a chunk boundary,465,S03-0155,S03,38,499,Hard fail (pipeline defect),low summaries all the namespaces and prefixes used in the SS
+R6,No word cut at a chunk boundary,467,S03-0157,S03,38,500,Hard fail (pipeline defect),sm.com.my/taxonomy/YYYY-MMDD/rep/ssm/ca-1965/fs/clbg/ssmt-f
+R6,No word cut at a chunk boundary,471,S03-0161,S03,39,499,Hard fail (pipeline defect), http://xbrl.ssm.com.my/role/ssm/rol_ss mt-cor_YYYY-MM-DD Na
+R6,No word cut at a chunk boundary,475,S03-0165,S03,40,500,Hard fail (pipeline defect),sts of reporting concepts as released in IFRS taxonomy for f
+R6,No word cut at a chunk boundary,476,S03-0166,S03,40,132,Hard fail (pipeline defect),i- 38 ssmt 667 ssmt-mfrs 950 ssmt-mpers 1164 ifrs-full 5247 
+R6,No word cut at a chunk boundary,478,S03-0168,S03,41,499,Hard fail (pipeline defect),andard (and axes) folder (located in reporting layer). These
+R6,No word cut at a chunk boundary,483,S03-0173,S03,42,500,Hard fail (pipeline defect),y_point.xsd Full entry point schema consists of all reportin
+R6,No word cut at a chunk boundary,484,S03-0174,S03,42,122,Hard fail (pipeline defect),t.xsd Full entry point schema consists of all reporting conc
+R6,No word cut at a chunk boundary,486,S03-0176,S03,43,500,Hard fail (pipeline defect),eporting concepts for Malaysian Financial Reporting Standard
+R6,No word cut at a chunk boundary,487,S03-0177,S03,43,500,Hard fail (pipeline defect),sdhttp://xbrl.ssm.com.my/taxonomy /YYYY-MM-DD/rep/ssm/ca201
+R6,No word cut at a chunk boundary,493,S03-0183,S03,44,250,Hard fail (pipeline defect),ual return for foreign companies 4 ssmt-ar4_YYYY-MMDD_entry
+R6,No word cut at a chunk boundary,495,S03-0185,S03,45,500,Hard fail (pipeline defect),brl.ssm.com.my/taxonomy /YYYY-MM-DD/rep/ssm/ca1965/fs/bnm/ 
+R6,No word cut at a chunk boundary,497,S03-0187,S03,45,264,Hard fail (pipeline defect), ssmt-fs-clbs1965_YYYY-MMDD_entry_point.xsdhttp://xbrl.ssm
+R6,No word cut at a chunk boundary,499,S03-0189,S03,46,500,Hard fail (pipeline defect),"ny has enumerations of Public company, Private company which"
+R6,No word cut at a chunk boundary,503,S03-0193,S03,47,500,Hard fail (pipeline defect),ertifyThatExcessOfMembersO fcompanyAboveFiftyConsistsO nlyOf
+R6,No word cut at a chunk boundary,506,S03-0196,S03,48,499,Hard fail (pipeline defect), ysia DescriptionOfWhetherCompan yHoldingImmovablePropertyIn
+R6,No word cut at a chunk boundary,510,S03-0200,S03,49,202,Hard fail (pipeline defect),tural disaster; Court case; Theft; Investigation by other Au
+R6,No word cut at a chunk boundary,512,S03-0202,S03,50,500,Hard fail (pipeline defect),se; Theft; Investigation by other Authority; Others TypeOfAu
+R6,No word cut at a chunk boundary,513,S03-0203,S03,50,480,Hard fail (pipeline defect),orting Standards; Others TypeOfSubmission TypeOfSubmission E
+R6,No word cut at a chunk boundary,515,S03-0205,S03,51,500,Hard fail (pipeline defect),laysia; Company not regulated by Bank Negara Malaysia Whethe
+R6,No word cut at a chunk boundary,516,S03-0206,S03,51,500,Hard fail (pipeline defect),therCompan yHadAppliedForExemptionFro mCoincidingForeignSubs
+R6,No word cut at a chunk boundary,517,S03-0207,S03,51,499,Hard fail (pipeline defect), orReliefFromRequirementsAsT oFormAndContentsOfDirectors Rep
+R6,No word cut at a chunk boundary,521,S03-0211,S03,52,500,Hard fail (pipeline defect),s MethodUsedForPreparingState mentOfProfitOrLoss Function of
+R6,No word cut at a chunk boundary,522,S03-0212,S03,52,500,Hard fail (pipeline defect),nAccoun tingStandards DisclosureOnWhetherOpening StatementCh
+R6,No word cut at a chunk boundary,523,S03-0213,S03,52,49,Hard fail (pipeline defect),rt NumberOfDirectorsSigningDire ctorsReport 1; 2;
+R6,No word cut at a chunk boundary,525,S03-0215,S03,53,500,Hard fail (pipeline defect),nco rporation DisclosureOfDirectorsReceived OrBecomeEntitled
+R6,No word cut at a chunk boundary,526,S03-0216,S03,53,500,Hard fail (pipeline defect),alStatementsAre DrawnInAccordanceWithAppro vedAccountingStan
+R6,No word cut at a chunk boundary,527,S03-0217,S03,53,97,Hard fail (pipeline defect),verse TypeOfExchangeOnWhichCom panyIsListed TypeOfExchangeOn
+R6,No word cut at a chunk boundary,529,S03-0219,S03,54,499,Hard fail (pipeline defect), foreign stock exchange only TypeOfStatusOfDividend Disclosu
+R6,No word cut at a chunk boundary,533,S03-0223,S03,55,500,Hard fail (pipeline defect),gnationOfDirector Director; Alternate director ProfessionalI
+R6,No word cut at a chunk boundary,534,S03-0224,S03,55,264,Hard fail (pipeline defect),reholder; TypeOfShareholderSubclassific ation Individual; Bo
+R6,No word cut at a chunk boundary,540,S03-0230,S03,57,500,Hard fail (pipeline defect),ypeOfGuarantee ProvidedByDirector DisclosureOnTypeOfGuarante
+R6,No word cut at a chunk boundary,544,S03-0234,S03,58,500,Hard fail (pipeline defect),y_point.xsd ID Type ssmt_TypeOfIdentificati onOfThirdDirecto
+R6,No word cut at a chunk boundary,547,S03-0237,S03,58,336,Hard fail (pipeline defect),fi-clbg_YYYY-MM-DD_entry_point.xsd; ssmt-kfi-fc_YYYY-MM-DD_e
+R6,No word cut at a chunk boundary,551,S03-0241,S03,59,500,Hard fail (pipeline defect),ficati onOfFifthDirectorWhoSi gnedStatementByDirect ors ssmt
+R6,No word cut at a chunk boundary,552,S03-0242,S03,59,500,Hard fail (pipeline defect),try_point.xsd ID Type ssmt_TypeOfIdentificati onOfCompanySec
+R6,No word cut at a chunk boundary,558,S03-0248,S03,60,500,Hard fail (pipeline defect),ry_point.xsd; ssmt-kfi-clbg_YYYY-MM-DD_entry_point.xsd; ssmt
+R6,No word cut at a chunk boundary,559,S03-0249,S03,60,74,Hard fail (pipeline defect),ed based on Extensible Enumerations 1.0 specification. Usage
+R6,No word cut at a chunk boundary,563,S03-0253,S03,61,290,Hard fail (pipeline defect),orporateControlled ByNonCitizensMember 1.Annual return taxon
+R6,No word cut at a chunk boundary,565,S03-0255,S03,62,500,Hard fail (pipeline defect),"ganised and viewed as a set of financial statements, exempti"
+R6,No word cut at a chunk boundary,566,S03-0256,S03,62,318,Hard fail (pipeline defect),00] Disclosure – Directors’ report is provided in illustrati
+R6,No word cut at a chunk boundary,571,S03-0261,S03,64,225,Hard fail (pipeline defect), label to existing concept based on reporting requirements i
+R6,No word cut at a chunk boundary,573,S03-0263,S03,65,498,Hard fail (pipeline defect), with the concept when it is being reported as the net of a 
+R6,No word cut at a chunk boundary,575,S03-0265,S03,65,500,Hard fail (pipeline defect),n it is reported as a start (end) period value. These roles 
+R6,No word cut at a chunk boundary,576,S03-0266,S03,65,26,Hard fail (pipeline defect),les used in SSMxT_2022v1.0
+R6,No word cut at a chunk boundary,578,S03-0268,S03,66,499,Hard fail (pipeline defect),"a}/{ mfrs,mpers,clbg,bnm,ar1-4,ea1-7}_YYYY-MMDD/ReportingLa"
+R6,No word cut at a chunk boundary,584,S03-0274,S03,67,499,Hard fail (pipeline defect),ing requirements http://xbrl.ssm.com.my/role/ssm/ca1965/{fs
+R6,No word cut at a chunk boundary,586,S03-0276,S03,67,500,Hard fail (pipeline defect),aning of the element. http://www.xbrl.org/2009/role/measurem
+R6,No word cut at a chunk boundary,587,S03-0277,S03,67,45,Hard fail (pipeline defect),tle of sections of standard or interpretation
+R6,No word cut at a chunk boundary,589,S03-0279,S03,68,499,Hard fail (pipeline defect),ences to ELRs. The level of support for this specification i
+R6,No word cut at a chunk boundary,591,S03-0281,S03,68,25,Hard fail (pipeline defect),ould be based on at least
+R6,No word cut at a chunk boundary,593,S03-0283,S03,69,500,Hard fail (pipeline defect),yout filtering details are added in table layout within tabl
+R6,No word cut at a chunk boundary,594,S03-0284,S03,69,500,Hard fail (pipeline defect),"axonomy/2022-12-31/ssmtcor','MethodUsedForPreparingStatemen"
+R6,No word cut at a chunk boundary,595,S03-0285,S03,69,123,Hard fail (pipeline defect),onceptName1 eq 'Function of expense') then(true()) else(fals
+R6,No word cut at a chunk boundary,597,S03-0287,S03,70,498,Hard fail (pipeline defect),"sion default arc role, the rendering engine is unable to ide"
+R6,No word cut at a chunk boundary,599,S03-0289,S03,71,500,Hard fail (pipeline defect),ported for different period. Add breakdown: <table:breakdown
+R6,No word cut at a chunk boundary,603,S03-0293,S03,72,63,Hard fail (pipeline defect), further categorized into common and entry-point specific ru
+R6,No word cut at a chunk boundary,605,S03-0295,S03,73,500,Hard fail (pipeline defect),d. 2.10.8.1.1 Mandatory elements There are certain elements 
+R6,No word cut at a chunk boundary,606,S03-0296,S03,73,499,Hard fail (pipeline defect),ule: “Assets” should be reported 2.10.8.1.2 Derived Mandator
+R6,No word cut at a chunk boundary,609,S03-0299,S03,74,499,Hard fail (pipeline defect),hich will usually have a negative value or a positive value.
+R6,No word cut at a chunk boundary,611,S03-0301,S03,74,179,Hard fail (pipeline defect),ments can either be in same ELR or in different ELRs. These 
+R6,No word cut at a chunk boundary,613,S03-0303,S03,75,500,Hard fail (pipeline defect),"t the assertion is either ""satisfied"" or ""unsatisfied"". From"
+R6,No word cut at a chunk boundary,614,S03-0304,S03,75,500,Hard fail (pipeline defect),ng. ▪ WARNING – These highlighted warnings occur when XBRL d
+R6,No word cut at a chunk boundary,615,S03-0305,S03,75,343,Hard fail (pipeline defect),ted with gen:arc with label sev_2 2.11 Taxonomy package The 
+R6,No word cut at a chunk boundary,618,S03-0308,S03,77,500,Hard fail (pipeline defect),"ed on SSM website. During the mapping phase, an entity must "
+R6,No word cut at a chunk boundary,619,S03-0309,S03,77,500,Hard fail (pipeline defect),"ion in these cases, the following provide additional guidanc"
+R6,No word cut at a chunk boundary,620,S03-0310,S03,77,500,Hard fail (pipeline defect),quirements. A label of the taxonomy element does not match t
+R6,No word cut at a chunk boundary,621,S03-0311,S03,77,343,Hard fail (pipeline defect), line items and tag them choosing the taxonomy elements base
+R6,No word cut at a chunk boundary,623,S03-0313,S03,78,500,Hard fail (pipeline defect),lue to be reported. If an entity wants to report the value o
+R6,No word cut at a chunk boundary,624,S03-0314,S03,78,500,Hard fail (pipeline defect),tains line items which are specific to a company and there a
+R6,No word cut at a chunk boundary,625,S03-0315,S03,78,500,Hard fail (pipeline defect),e: • monetary amounts • share counts • earnings per share Nu
+R6,No word cut at a chunk boundary,626,S03-0316,S03,78,177,Hard fail (pipeline defect), be applied within the instance – the value of the “decimals
+R6,No word cut at a chunk boundary,628,S03-0318,S03,79,500,Hard fail (pipeline defect),n the instance document the Assets would be 53928000 with th
+R6,No word cut at a chunk boundary,629,S03-0319,S03,79,500,Hard fail (pipeline defect),217 (see www.iso.org) e.g. iso4217:MYR for Malaysian Ringgit
+R6,No word cut at a chunk boundary,630,S03-0320,S03,79,405,Hard fail (pipeline defect), in the XBRL context for share counts are listed in Table be
+R6,No word cut at a chunk boundary,634,S03-0324,S03,80,213,Hard fail (pipeline defect),f measure Denominator Unit Measure Mandatory Must have the v
+R6,No word cut at a chunk boundary,636,S03-0326,S03,81,22,Hard fail (pipeline defect),fined in section 2.9.8
+R6,No word cut at a chunk boundary,639,S03-0329,S03,82,250,Hard fail (pipeline defect),les in this document. This document is to be used in conjunc
+R6,No word cut at a chunk boundary,643,S03-0333,S03,83,335,Hard fail (pipeline defect), to clearly suggest the nature of file / content included in
+R6,No word cut at a chunk boundary,645,S03-0335,S03,84,500,Hard fail (pipeline defect),"ded for every ELR. As a best practice, an artificial number "
+R6,No word cut at a chunk boundary,646,S03-0336,S03,84,500,Hard fail (pipeline defect),tioned in curly brackets) {prefix}{entrypoints}{date}role{so
+R6,No word cut at a chunk boundary,647,S03-0337,S03,84,375,Hard fail (pipeline defect),"ined, followed by role id The format to be followed for role"
+R6,No word cut at a chunk boundary,650,S03-0340,S03,85,500,Hard fail (pipeline defect),eporttoMember_Layout1 4.2.4.6 Roles definition MUST start wi
+R6,No word cut at a chunk boundary,651,S03-0341,S03,85,201,Hard fail (pipeline defect),formation 2 Starting with 02 Scope of filing 3 Starting with
+R6,No word cut at a chunk boundary,656,S03-0346,S03,87,500,Hard fail (pipeline defect),sures which have used on for presentation linkbase [010000] 
+R6,No word cut at a chunk boundary,657,S03-0347,S03,87,316,Hard fail (pipeline defect),s c) Table linkbase disclosures – All roleURI which are crea
+R6,No word cut at a chunk boundary,659,S03-0349,S03,88,500,Hard fail (pipeline defect),ant LC3 rules require that: • Element names MUST be based on
+R6,No word cut at a chunk boundary,660,S03-0350,S03,88,500,Hard fail (pipeline defect),"ed to) the following: and, for, which, with • As a consequen"
+R6,No word cut at a chunk boundary,661,S03-0351,S03,88,120,Hard fail (pipeline defect),xpressed as text The expression of number is a matter of jud
+R6,No word cut at a chunk boundary,663,S03-0353,S03,89,500,Hard fail (pipeline defect),urrent provisions”. (“Total provisions” should be used as a 
+R6,No word cut at a chunk boundary,664,S03-0354,S03,89,203,Hard fail (pipeline defect),ommon starting wordings for text-type content that appear in
+R6,No word cut at a chunk boundary,666,S03-0356,S03,90,500,Hard fail (pipeline defect),o the end of the element name Abstract elements are used to 
+R6,No word cut at a chunk boundary,667,S03-0357,S03,90,500,Hard fail (pipeline defect),ame Text block elements are used to disclose narrative infor
+R6,No word cut at a chunk boundary,668,S03-0358,S03,90,96,Hard fail (pipeline defect),ct concepts used as link between dimensions and line items. 
+R6,No word cut at a chunk boundary,671,S03-0361,S03,91,500,Hard fail (pipeline defect),"ations, e.g., LHDN is used for “Inland Revenue Board of Mala"
+R6,No word cut at a chunk boundary,672,S03-0362,S03,91,4,Hard fail (pipeline defect),bels
+R6,No word cut at a chunk boundary,674,S03-0364,S03,92,500,Hard fail (pipeline defect),"sed As there are various accepted ways to spell some terms, "
+R6,No word cut at a chunk boundary,675,S03-0365,S03,92,184,Hard fail (pipeline defect),t” (to present again) o “re-record” • semi always hyphen • s
+R6,No word cut at a chunk boundary,679,S03-0369,S03,93,229,Hard fail (pipeline defect),sion of number is a matter of judgment. The following rules 
+R6,No word cut at a chunk boundary,681,S03-0371,S03,94,500,Hard fail (pipeline defect),ponent of the label. The different sets of curly braces are 
+R6,No word cut at a chunk boundary,683,S03-0373,S03,94,252,Hard fail (pipeline defect),"r example, “Provisions” should always be current, non-curren"
+R6,No word cut at a chunk boundary,686,S03-0376,S03,95,424,Hard fail (pipeline defect)," what they do or do not include For example, “Property, plan"
+R6,No word cut at a chunk boundary,688,S03-0378,S03,96,500,Hard fail (pipeline defect),ositive or negative values: • Disposals (acquisitions) • fro
+R6,No word cut at a chunk boundary,689,S03-0379,S03,96,499,Hard fail (pipeline defect)," standards, acts etc.) MUST be placed between square bracket"
+R6,No word cut at a chunk boundary,692,S03-0382,S03,97,500,Hard fail (pipeline defect),e word “[axis]” to the end of the label For example: “Nature
+R6,No word cut at a chunk boundary,693,S03-0383,S03,97,499,Hard fail (pipeline defect),n). For example: “Business one [member]” 4.2.6.20 The word “
+R6,No word cut at a chunk boundary,697,S03-0387,S03,98,500,Hard fail (pipeline defect),e labels are defined differently for every entry point Conce
+R6,No word cut at a chunk boundary,698,S03-0388,S03,98,272,Hard fail (pipeline defect), for “Inland Revenue Board of Malaysia” or SEC is commonly u
+R6,No word cut at a chunk boundary,700,S03-0390,S03,99,309,Hard fail (pipeline defect),tion group xbrldt:hypercubeItem Period Type duration Data Ty
+R6,No word cut at a chunk boundary,702,S03-0392,S03,100,499,Hard fail (pipeline defect), 4.2.8.1 References MUST be defined for all non-abstract ele
+R6,No word cut at a chunk boundary,706,S03-0396,S03,101,500,Hard fail (pipeline defect),"efined within formula linkbase will have a unique ID, which "
+R6,No word cut at a chunk boundary,707,S03-0397,S03,101,215,Hard fail (pipeline defect),perly. (eg. Total equity = sum of (Non-controlling interest 
+R6,No word cut at a chunk boundary,709,S03-0399,S03,102,500,Hard fail (pipeline defect),ed. o WARNING – These highlighted warnings occur when XBRL d
+R6,No word cut at a chunk boundary,710,S03-0400,S03,102,500,Hard fail (pipeline defect),015-03-18 Table linkbase is standard way of rendering report
+R6,No word cut at a chunk boundary,711,S03-0401,S03,102,500,Hard fail (pipeline defect),n for the element used in table.xml file. 4.2.12 Taxonomy pa
+R6,No word cut at a chunk boundary,712,S03-0402,S03,102,106,Hard fail (pipeline defect),d taxonomyPackage.xml files 1. Catalog.xml – contains dummy 
+R6,No word cut at a chunk boundary,716,S03-0406,S03,103,33,Hard fail (pipeline defect),on identifier for the entry point
+R6,No word cut at a chunk boundary,719,S03-0409,S03,105,500,Hard fail (pipeline defect),ces in footnote extended links; arcs have a set of attribute
+R6,No word cut at a chunk boundary,720,S03-0410,S03,105,500,Hard fail (pipeline defect),he kind of relationship that the arc expresses; there is a s
+R6,No word cut at a chunk boundary,721,S03-0411,S03,105,500,Hard fail (pipeline defect),ments cannot be changed. Authoritative reference: A point of
+R6,No word cut at a chunk boundary,722,S03-0412,S03,105,121,Hard fail (pipeline defect)," example, Revenue for a period might be reported along a bus"
+R6,No word cut at a chunk boundary,724,S03-0414,S03,106,499,Hard fail (pipeline defect), indicates how calculation relationships involving the eleme
+R6,No word cut at a chunk boundary,726,S03-0416,S03,106,367,Hard fail (pipeline defect),ts along the axis of a table. Domain member: An element repr
+R6,No word cut at a chunk boundary,728,S03-0418,S03,107,499,Hard fail (pipeline defect),"utes (presentation, calculation, labels, and so forth) witho"
+R6,No word cut at a chunk boundary,733,S03-0423,S03,108,499,Hard fail (pipeline defect),ted in a print listing or financial statement presentation. 
+R6,No word cut at a chunk boundary,735,S03-0425,S03,108,3,Hard fail (pipeline defect), the
+R6,No word cut at a chunk boundary,737,S03-0427,S03,109,499,Hard fail (pipeline defect), that allows additional information to be included in the co
+R6,No word cut at a chunk boundary,739,S03-0429,S03,109,500,Hard fail (pipeline defect),ps files directly referenced by that schema. The taxonomy sc
+R6,No word cut at a chunk boundary,740,S03-0430,S03,109,30,Hard fail (pipeline defect), associate facts that cannot be
+R6,No word cut at a chunk boundary,742,S03-0432,S03,110,426,Hard fail (pipeline defect),bute (-1 or +1) that works in conjunction with the balance o
+R7,Not a table-of-contents chunk,1,S01-0002,S01,2,17,Quarantine,Table of Contents
+R7,Not a table-of-contents chunk,2,S01-0003,S01,2,500,Quarantine,1. MBRS filing requirements ................................
+R7,Not a table-of-contents chunk,3,S01-0004,S01,2,500,Quarantine,4 What are MBRS filing requirements? .......................
+R7,Not a table-of-contents chunk,4,S01-0005,S01,2,500,Quarantine,tallation of mTool .........................................
+R7,Not a table-of-contents chunk,5,S01-0006,S01,2,500,Quarantine,... 10 2.1.5 Can mTool be installed on computers running on 
+R7,Not a table-of-contents chunk,6,S01-0007,S01,2,500,Quarantine,.......... 11 2.1.8 What are the minimum hardware and softwa
+R7,Not a table-of-contents chunk,7,S01-0008,S01,2,499,Quarantine,ng error message appears ............................. 14 2.
+R7,Not a table-of-contents chunk,8,S01-0009,S01,2,392,Quarantine,the following error message appears ................ 19 2.2.
+R7,Not a table-of-contents chunk,9,S01-0010,S01,3,500,Quarantine,"2.2.12 On opening the Excel sheet, the following error messa"
+R7,Not a table-of-contents chunk,10,S01-0011,S01,3,500,Quarantine,........................................ 27 2.3.3 Exemption 
+R7,Not a table-of-contents chunk,11,S01-0012,S01,3,500,Quarantine,................................................. 32 3.2 Use
+R7,Not a table-of-contents chunk,12,S01-0013,S01,3,500,Quarantine,............. 33 3.3.1 Who are the Maker and the Lodger? ...
+R7,Not a table-of-contents chunk,13,S01-0014,S01,3,500,Quarantine,................ 33 3.3.5 If Maker is getting error of user 
+R7,Not a table-of-contents chunk,14,S01-0015,S01,3,500,Quarantine,"..................... 34 3.3.10 I am a Lodger, what kind of "
+R7,Not a table-of-contents chunk,15,S01-0016,S01,3,451,Quarantine,e Rectification Application? .............................. 
+R7,Not a table-of-contents chunk,16,S01-0017,S01,4,500,Quarantine,3.5.3 How much is the fee to purchase and renew Digital Cert
+R7,Not a table-of-contents chunk,17,S01-0018,S01,4,500,Quarantine,........... 37 3.6.3 What should I do if my payment was a su
+R7,Not a table-of-contents chunk,18,S01-0019,S01,4,499,Quarantine,............................................... 37 3.6.8 Wha
+R7,Not a table-of-contents chunk,19,S01-0020,S01,4,500,Quarantine,I need a digital signature? ................................
+R7,Not a table-of-contents chunk,20,S01-0021,S01,4,500,Quarantine,".... 39 3.7.7 What should I do if a ""Junk Character Error! J"
+R7,Not a table-of-contents chunk,21,S01-0022,S01,4,241,Quarantine,..................................................... 43 4.2
+R7,Not a table-of-contents chunk,136,S02-0002,S02,2,500,Quarantine,Table of Contents 1 Introduction to the MBRS preparation too
+R7,Not a table-of-contents chunk,137,S02-0003,S02,2,500,Quarantine,......... 9 3.2 Preparation flow............................
+R7,Not a table-of-contents chunk,138,S02-0004,S02,2,500,Quarantine,.......................... 13 3.4 Open an existing XBRL File
+R7,Not a table-of-contents chunk,139,S02-0005,S02,2,499,Quarantine, 4.1.2 Toolbox..............................................
+R7,Not a table-of-contents chunk,140,S02-0006,S02,2,224,Quarantine,...................................... 31 4.4 Switch view be
+R7,Not a table-of-contents chunk,141,S02-0007,S02,3,500,Quarantine,4.4.1 Switch view by using the “Change Filing Information”..
+R7,Not a table-of-contents chunk,142,S02-0008,S02,3,500,Quarantine,........ 37 5.2 Templates...................................
+R7,Not a table-of-contents chunk,143,S02-0009,S02,3,499,Quarantine, 6.2.2 Selective Auto Tag...................................
+R7,Not a table-of-contents chunk,144,S02-0010,S02,3,500,Quarantine,............... 49 6.3.4 Aggregate/Overwrite values for drag
+R7,Not a table-of-contents chunk,145,S02-0011,S02,3,142,Quarantine,....................................................... 55 6
+R7,Not a table-of-contents chunk,146,S02-0012,S02,4,500,Quarantine,7 Validate and Save XBRL File...............................
+R7,Not a table-of-contents chunk,147,S02-0013,S02,4,499,Quarantine, Features...................................................
+R7,Not a table-of-contents chunk,148,S02-0014,S02,4,500,Quarantine,ation................................................. 69 8.
+R7,Not a table-of-contents chunk,149,S02-0015,S02,4,500,Quarantine,......... 72 8.6 Footnotes .................................
+R7,Not a table-of-contents chunk,150,S02-0016,S02,4,264,Quarantine,............................................................
+R7,Not a table-of-contents chunk,151,S02-0017,S02,5,500,Quarantine,8.9.2 Hide Selected.........................................
+R7,Not a table-of-contents chunk,152,S02-0018,S02,5,500,Quarantine,........................................................ 84 
+R7,Not a table-of-contents chunk,153,S02-0019,S02,5,500,Quarantine,......................... 89 8.14 Import XBRL data..........
+R7,Not a table-of-contents chunk,154,S02-0020,S02,5,403,Quarantine,............. 97 8.19 Proxy Settings........................
+R7,Not a table-of-contents chunk,315,S03-0005,S03,3,500,Quarantine,Contents 1 Introduction.....................................
+R7,Not a table-of-contents chunk,316,S03-0006,S03,3,500,Quarantine,............................. 9 1.4.1 Sector wise applicabil
+R7,Not a table-of-contents chunk,317,S03-0007,S03,3,500,Quarantine,........................................11 1.7 Non-financial
+R7,Not a table-of-contents chunk,318,S03-0008,S03,3,500,Quarantine,.......................13 2.1.1 Reporting content ..........
+R7,Not a table-of-contents chunk,319,S03-0009,S03,3,500,Quarantine,solute and relative paths ..................................
+R7,Not a table-of-contents chunk,320,S03-0010,S03,3,500,Quarantine,ing concepts schema wise ...................................
+R7,Not a table-of-contents chunk,321,S03-0011,S03,3,500,Quarantine,............................................................
+R7,Not a table-of-contents chunk,322,S03-0012,S03,3,68,Quarantine,............................................................
+R7,Not a table-of-contents chunk,323,S03-0013,S03,4,500,Quarantine,2.10.5 Reference Linkbase...................................
+R7,Not a table-of-contents chunk,324,S03-0014,S03,4,499,Quarantine,itional XBRL Technologies ..................................
+R7,Not a table-of-contents chunk,325,S03-0015,S03,4,500,Quarantine,for tagging line items presented in Primary Financial Statem
+R7,Not a table-of-contents chunk,326,S03-0016,S03,4,500,Quarantine,ents .......................................................
+R7,Not a table-of-contents chunk,327,S03-0017,S03,4,500,Quarantine,............................................................
+R7,Not a table-of-contents chunk,328,S03-0018,S03,4,500,Quarantine,3 4.2.4 Extended link role (ELR) ...........................
+R7,Not a table-of-contents chunk,329,S03-0019,S03,4,500,Quarantine,............................................................
+R7,Not a table-of-contents chunk,330,S03-0020,S03,4,87,Quarantine,............................................................
+R7,Not a table-of-contents chunk,331,S03-0021,S03,5,500,Quarantine,List of Tables Table 1: Applicable statements ..............
+R7,Not a table-of-contents chunk,332,S03-0022,S03,5,500,Quarantine,................................................36 Table 6: 
+R7,Not a table-of-contents chunk,333,S03-0023,S03,5,500,Quarantine,............................................................
+R7,Not a table-of-contents chunk,334,S03-0024,S03,5,499,Quarantine,urn entry points ...........................................
+R7,Not a table-of-contents chunk,335,S03-0025,S03,5,500,Quarantine,18: Label roles used in SSMxT_2022v1.0......................
+R7,Not a table-of-contents chunk,336,S03-0026,S03,5,292,Quarantine,ary amounts.................................................
+R7,Not a table-of-contents chunk,337,S03-0027,S03,6,500,Quarantine,List of Illustrations Illustration 1: Hierarchical modelling
+R7,Not a table-of-contents chunk,338,S03-0028,S03,6,500,Quarantine,n mTool.......................................33 Illustratio
+R7,Not a table-of-contents chunk,339,S03-0029,S03,6,500,Quarantine,......68 Illustration 10: Table layout without layout filter
+R7,Not a table-of-contents chunk,340,S03-0030,S03,6,416,Quarantine,here domain [member] having dimension default arc role .....

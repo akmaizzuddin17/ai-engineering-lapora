@@ -80,9 +80,13 @@ Raw SSM documents and prepared text are not committed (redistribution not verifi
 
 ## Week 4 Documents
 
-- [Data Quality & Bias Report](docs/week4_data_quality_report.md)
-- **Quality-gate decision: GO WITH CONDITIONS** (prepared guidance text S01–S03, internal use, before embeddings)
-- Unresolved actions: (1) re-chunk with sentence-aware splitting and re-run rule V2 (252 mid-word cuts, including the FAQ "Other" rule); (2) confirm FAQ version, newer SSM versions and reuse rights; (3) add the SSMxT concept list as a new audited source.
+- [Data Quality Report](docs/week4_data_quality_report.md) (8 sections)
+- [Notebook](notebooks/week4_quality.ipynb): hand-off check, inventory, validation rules, triage, dedup, coverage, bias, governance
+- Reviewed corpus for Topic 7: `data/prepared_chunks_clean.jsonl` and `data/chunks_clean.pkl` (678 chunks; 66 contents chunks quarantined in `docs/week4_quarantine.csv`)
+- Logs: `docs/week4_validation_failures.csv`, `docs/week4_duplicate_review.csv`, `docs/week4_coverage_by_source.png`
+- **Quality-gate decision: GO WITH CONDITIONS** (internal use only)
+- Unresolved: (1) re-chunk sentence-aware and pass R6 (258 mid-word cuts, 34.7%, including the FAQ "Other" rule); (2) confirm FAQ version, newer SSM versions and reuse rights; (3) add the SSMxT concept list as an audited source.
+- Rights note: the chunk files contain SSM text and redistribution terms are not verified; remove them from Git if SSM terms do not allow it.
 
 ## Weekly Progress
 
@@ -91,4 +95,4 @@ Raw SSM documents and prepared text are not committed (redistribution not verifi
 | W1 | System map + project scope | README + docs | ✅ |
 | W2 | Requirements, evaluation criteria, V1 architecture | Requirements + evaluation + architecture docs | ✅ |
 | W3 | V1 data pipeline (PDF/TXT) | Notebook + inventory + diagram + decisions + manifests | ✅ |
-| W4 | Data quality and bias audit | Data Quality & Bias Report (GO WITH CONDITIONS) | ✅ |
+| W4 | Data quality, validation and governance | Notebook + Data Quality Report + reviewed corpus (GO WITH CONDITIONS) | ✅ |

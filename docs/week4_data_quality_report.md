@@ -1,92 +1,97 @@
-# Week 4 — Data Quality & Bias Report: Lapora
+# Week 4 Data Quality Report: Lapora (Topic 4)
 
-**Student:** Akma Izzuddin bin Azman · **Course:** AI Engineering — Topic 4 Lab · **Audit date:** 22 Nov 2026
-**Labels used:** **Observed** (I checked it) · **Inferred risk** (plausible, not proven) · **N.V.** (Not Verified)
+**Project:** Lapora, an MBRS XBRL tagging assistant (SSMxT / MPERS concepts, citations, abstention)
+**Author:** Akma Izzuddin bin Azman · **Input:** Topic 3 hand-off, 744 chunks from 3 SSM documents
+**Evidence:** `notebooks/week4_quality.ipynb`, `docs/week4_validation_failures.csv`, `docs/week4_duplicate_review.csv`, `docs/week4_quarantine.csv`, `docs/week4_coverage_by_source.png`
+**Reviewed corpus:** 678 chunks (`data/prepared_chunks_clean.jsonl`, `data/chunks_clean.pkl`; reloaded and verified)
 
----
+## 1. Data Quality Scorecard
 
-## 1. Project and Data Overview
+Rating 1 (poor) to 5 (strong), or **N.V.** (Not Verified). Ratings rest on the evidence shown, not on a pass rate.
 
-| Field | Evidence |
+| Dimension | Rating | Evidence | Limit of the evidence |
+|---|---|---|---|
+| Completeness | 3 | 0 missing text, 0 missing provenance (R1, R2). But 19 content chunks are under 40 characters (R5) and the FAQ "Other" rule is split over two chunks (S01-0073/0074) | Checked structure, not whether every needed concept is present |
+| Accuracy | 3 | 15 of 15 sampled chunks found in the raw source (S01 also on the stated page); 0 corrupted characters (R4) | Small sample (5 per source) |
+| Consistency | 2 | FAQ carries two version strings (39 pages "1.0 Jun 2022", 3 pages "2.0 Jun 2022"; PDF title "update v2 31052022"); 258 chunks (34.7%) cut a word at the boundary (R6) | Mid-word count is a heuristic; Topic 3 counted 252, a gap of 6 not explained (N.V.) |
+| Timeliness | N.V. | Versions known: mTool v2.4 (Sept 2024), SSMxT_2022 v1.0 (no date), FAQ conflicting | Not compared with newer SSM publications (site unreachable from my environment) |
+| Uniqueness | 4 | 0 exact duplicates, 0 shared 100-character openings | Exact hashing is not semantic uniqueness; paraphrased overlap between FAQ and mTool is not measured |
+| Coverage | 2 | Corpus is 60.0% S03, 23.2% S02, 16.8% S01; core statements thin (14 chunks mention financial position, 9 profit or loss) | Keyword proxy, not concept-level coverage |
+| Provenance | 4 | SHA-256, version and URL recorded for all three sources | Rights terms N.V. |
+
+## 2. Validation and Data-Defect Findings
+
+| Rule | Failures / 744 | Decision |
+|---|---|---|
+| R1 text present | 0 | Hard fail |
+| R2 provenance complete | 0 | Hard fail |
+| R3 page in range | 0 | Hard fail |
+| R4 no corrupted characters | 0 | Hard fail |
+| R5 content chunk ≥ 40 characters | 19 (S01 1, S02 6, S03 12) | Review |
+| R6 no word cut at boundary | 258 (S01 11, S02 49, S03 198) | Hard fail (pipeline defect); kept and flagged |
+| R7 not a contents chunk | 66 (S01 21, S02 19, S03 26) | Quarantine |
+| R8 no noisy whitespace | 0 | Warning |
+
+The text is clean at character level; the defects are structural (500-character hard cuts). Also found: 53 S03 chunks where a long element name is wrapped across lines and split. Triage of 5 cases (retain / correct / remove / quarantine / review) is in the notebook, section A5. **Pandera was not available in my environment; R1-R4 ran in pandas, and the Pandera path is unverified.**
+
+## 3. Duplicate and Anomaly Findings
+
+- Exact-hash duplicates: **0**. Shared 100-character openings: **0**.
+- This does not prove semantic uniqueness: the FAQ and mTool manual describe overlapping filing steps in different words.
+- Anomalies: 3 organisational emails and 3 phone numbers in S01-S03 text (flagged `contact_detail`); chunk S01 email list ends with a stray full stop; FAQ version conflict.
+
+## 4. Representation, Coverage, and Bias Assessment
+
+Potential representation risks only; no fairness claims (Topic 8).
+
+| Risk | Evidence | Propagation path | Mitigation / test |
+|---|---|---|---|
+| Source imbalance (S03 = 60.0%) | 407 / 157 / 114 chunks | Source selection → S03 dominates corpus → S03 dominates retrieval → fewer plain FAQ-style answers | Per-source cap; test top-5 source share on 20 FAQ questions |
+| Unequal boundary damage | Mid-word rate S03 46.4%, S02 29.9%, S01 7.0% | 500-character cut → S03/S02 chunks damaged more → worse citations for those topics | Sentence-aware chunking; target < 5% per source |
+| Version / historical bias | 2022 and 2024 guidance only | Old versions → corpus → outdated retrieval → wrong tag suggested | Version check; show version in every citation |
+
+Unequal chunk counts are a signal, not proof: S03 is the longest document. Coverage vs scope: MPERS 33 and MFRS 37 chunks; the "Other" rule has only 2 chunks (both damaged); the SSMxT concept list itself is not in the corpus.
+
+## 5. Privacy, Consent, Rights/Access, Governance
+
+| Item | Record |
 |---|---|
-| Project | **Lapora**: retrieval-grounded assistant that suggests SSMxT (MPERS) concepts for SOFP / P&L line items, with citations and a "Needs review" flag. |
-| Two Topic 2 requirements | **FR3** (every suggestion cites its source document and taxonomy version): needs source ID, page and version on every guidance passage. **FR4** (mark "Needs review" when SSM guidance points to a generic "Other" element): needs the FAQ "Other" rule available as complete, retrievable text. |
-| Topic 3 pathway | A (PDF/TXT). Unit of inspection: **chunk** of prepared text. |
-| Audited output | **Part C**, `data/pipeline_v1/documents_{faq,mtool,taxonomy_arch}/prepared_text.jsonl`. Matching manifests: `data/pipeline_v1/documents_*/pipeline_manifest.json`. These files are byte-identical to the Part B files under `data/processed/` (Topic 3 Cell 9B), so `data/week3_manifest.json` traces them to the same sources. |
-| Sources | S01 `FAQ-MBRS.pdf` · S02 `User_manual_mTool_v2_FS2016.pdf.txt` · S03 `SSMxT2022_Architecture_Document.pdf.txt` (SHA-256 in `data/week3_manifest.json`). Official SSM publications. Rights: **N.V.** |
-| Population and sample | **Population:** 744 chunks (S01 135, S02 176, S03 433), of which 66 are flagged table-of-contents, leaving 678 content chunks. V1, V2, uniqueness and coverage use the **whole population**. Accuracy uses a **sample of 15 chunks** (5 per source: 2 suspected-problem chunks chosen from the inspection, 3 random with seed 4). |
-| Limits | Prepared text only. The SSMxT **concept list** needed for FR2 is not in any source, so it is **not audited** (no data exists yet). Page numbers of S02 and S03 follow the supplied text conversions, not the original PDFs (**N.V.**). |
+| Owner | Student (Akma Izzuddin); source owner is Suruhanjaya Syarikat Malaysia (SSM) |
+| Version / provenance | FAQ conflicting versions; mTool v2.4 Sept 2024; SSMxT_2022 v1.0; SHA-256 and URL stored in `data/week3_manifest.json` |
+| Rights / access | Publicly accessible documents. **Redistribution terms N.V.** Publicly accessible does not mean public domain |
+| Personal data | 0 NRIC-like numbers; 3 organisational emails and 3 phone numbers, not needed for tagging, to be excluded before indexing |
+| Consent basis | Not applicable (no individuals' data) |
+| Update / retention | Re-validate on a new SSM version or any chunking change; raw files stay out of Git |
 
-**Checkpoint A1:** If the FAQ "Other" rule is cut or missing, FR4 cannot flag generic-element items and error-catch (O2) falls. If page or version is wrong, FR3 citations cannot be verified.
+**Open issue:** this lab requires committing the chunk files, which contain SSM text. This conflicts with my Week 3 decision not to publish source text. The files can be removed from Git, or the repository made private, if SSM terms do not allow redistribution.
 
-## 2. Five-Dimension Quality Scorecard
+## 6. Mitigation Plan and Residual Risk
 
-| Dimension | Finding | Sample / evidence | Impact | Decision |
+| Issue | Evidence | Action | Owner / timing | Residual risk |
 |---|---|---|---|---|
-| Completeness | The FR4 "Other" rule is present once (FAQ 2.3.1.4, page 25) but is **split across chunks `S01-0073` and `S01-0074`**. "Statement of financial position / SOFP" appears in only 1 FAQ chunk (S02: 3, S03: 4). The FR2 concept list is absent from all sources. | Whole population (keyword match) | A retrieved half-rule may not trigger "Needs review". FR2 cannot be tested on this data. | **Review** |
-| Consistency | FAQ version conflict: cover says **Version 2.0 Jun 2022**; 39 of 42 page headers say **Version 1.0 Jun 2022**. Recorded as found in the manifest. | Topic 3 inspection (Cell A3) | Citation may name the wrong version (FR3). | **Warning** |
-| Accuracy | Text of **15 / 15** sampled chunks found in the raw source. Page confirmed for **9 / 10** txt-source chunks by unique match; 1 is **N.V.** (2-character fragment `S02-0126` matches everywhere). | Sample n = 15 (not the whole dataset) | Prepared text is faithful to the supplied files. Original-PDF page numbers for S02/S03 are N.V. | **Pass** (S01) · **N.V.** (S02/S03 page = original PDF) |
-| Timeliness | S01 Jun 2022 (or 2.0), S02 v2.4 Sept 2024, S03 SSMxT_2022 v1.0, no document date. Whether newer versions exist: **N.V.** (not checked; the shell cannot reach ssm.com.my). | `docs/week3_data_inventory.md` | Guidance may be superseded. | **N.V.** |
-| Uniqueness | **0** duplicate record IDs; **0** duplicate texts among 678 content chunks; **0** chunks duplicated across sources (>80 chars). | Whole population | No duplicate evidence inflating retrieval. | **Pass** |
+| Mid-word chunk cuts | R6: 258 (34.7%) | Re-chunk sentence-aware with overlap; re-run R6 | Student, before Topic 7 (Week 9) | Medium until fixed; flagged meanwhile |
+| FAQ "Other" rule split | S01-0073/0074 | Re-chunk so the rule stays whole | Student, with re-chunking | High for FR4 if left |
+| Contents pages | R7: 66 chunks | Quarantined (kept in log, not indexed) | Done | Low |
+| Short fragments | R5: 19 | Review after re-chunking | Student | Low |
+| FAQ version conflict / timeliness | 1.0 vs 2.0 strings; newer versions N.V. | Confirm with SSM; check newer versions | Student, before final evaluation | Medium |
+| Source imbalance | 60.0% S03 | Per-source retrieval cap; add concept list as audited source (FR2) | Student, Topic 7 | Medium |
+| Rights N.V. | No terms found | Confirm reuse terms; remove files from Git if needed | Student, now | Medium |
 
-## 3. Validation Findings
+## 7. Impact on Topic 2 Requirements / Evaluation Criteria
 
-| Rule | Risk / requirement | Condition | Tested | Observed | Action if failed |
-|---|---|---|---|---|---|
-| **V1** Source reference complete | Uncitable passage, FR3 / RAI1 | `source_id`, `source_file`, `source_version` non-empty; `page` an integer inside the source's real page range; `source_sha256` equals the manifest value; text non-empty | 744 chunks | **744 pass, 0 fail** | Hard fail: quarantine the chunk |
-| **V2** No word cut at a chunk boundary | Topic 3 decision D2 risk (fixed-size fallback for paragraphs over 500 characters) → incomplete FR4 rule, RAI1 | A chunk boundary created by the fixed-size fallback must not fall inside a word (alphanumeric on both sides) | 744 chunks | **252 boundaries fail** (33.9%): S01 11, S02 45, S03 196. Example: `S01-0073` → `S01-0074` splits the "Other" rule mid-sentence. | Hard fail for the retrieval corpus: re-chunk before embedding (Section 7) |
+- **FR3 (citations):** provenance is complete and pages are valid, so citations are possible. Half-word chunks weaken citation quality for S03/S02.
+- **FR4 (Needs review / "Other" rule):** the rule's evidence is split, so abstention tests on "Other" should be expected to fail until re-chunking.
+- **RAI1:** timeliness is N.V., so Lapora should show the document version and say it may be outdated.
+- **NFR5:** the 15-chunk accuracy sample passed, but the sample is small.
+- Evaluation: add per-source retrieval share and R6 rate as tracked metrics.
 
-V2 is a **defect in the preparation method**, not bad source text. The evidence is the Topic 3 comparison (Cell 5A1) and the recount above.
+## 8. Quality Gate Decision
 
-## 4. Duplicate, Anomaly and Coverage Findings
+**GO WITH CONDITIONS** (internal use and development only).
 
-**Duplicates:** none found (Section 2).
-**Anomalies (Observed):** 19 of 678 content chunks are shorter than 40 characters (S01 1, S02 6, S03 12), e.g. `S02-0126` ("he", 2 characters) and `S03-0051` ("ns").", 5 characters), which are word fragments from V2. `S01-0126` ("d) Others (if any) PDF") is a genuine table cell, so it is an **exception, not a defect**; none were removed. Lowercase-start chunks: 17/114 (S01), 60/157 (S02), 258/407 (S03).
+Conditions before Topic 7 indexing:
+1. Re-chunk (sentence-aware, overlap) and pass R6 (< 5% per source), keeping the "Other" rule whole.
+2. Confirm the FAQ version, check for newer SSM versions, and confirm reuse rights.
+3. Add the SSMxT concept list as an audited source (FR2).
 
-| Case needed | Expected evidence | Observed (content chunks) | Possible effect |
-|---|---|---|---|
-| FR4: "Other" element guidance | Complete FAQ rule | 1 FAQ section (p25), split over 2 chunks (`S01-0073`, `S01-0074`). The word "Other" appears in 14 / 14 / 61 content chunks (S01 / S02 / S03). | A retrieval miss on either half weakens the "Needs review" trigger. |
-| SOFP and P&L statements | Guidance for both statements | SOFP term: 1 / 3 / 4; P&L term: 3 / 3 / 3 (S01 / S02 / S03). Keyword presence only; I did not read for adequacy. | Thin FAQ coverage for the task's two core statements. |
-
-Limit: keyword counts show presence, not quality.
-
-## 5. Bias Assessment
-
-- **Pipeline-induced (Observed cause, Inferred effect):** paragraphs over 500 characters are cut by fixed slicing (S01 11, S02 47, S03 108 paragraphs; 252 mid-word cuts). The cut falls where the text is longest, which is often where explanations are given. **Effect:** rules and definitions may be retrieved as fragments, so FR3 citations support less and FR4 flags are missed. **Action:** re-chunk (sentence-aware with overlap); re-run V2.
-- **Representation (Inferred risk):** S03 (architecture document) is **60.0%** of content chunks (S02 23.2%, S01 16.8%). **Effect:** retrieval for a line item may favour taxonomy-structure wording over the FAQ rules that FR4 depends on. **Action:** keep `source_id` as a filter and report source mix per retrieved top-k in Topic 5+.
-- **Historical:** all guidance dates from 2022 to 2024 (Inferred risk: later rule changes are not reflected).
-No claim is made about system fairness or accuracy; that is measured later (O3 / RAI5).
-
-## 6. Privacy, Rights and Governance
-
-| Question | Record |
-|---|---|
-| Provenance / version | Source IDs S01–S03, owner SSM, checksums in `data/week3_manifest.json`; versions as declared (FAQ conflict flagged). |
-| Rights | Public SSM documents. Licence or permission for reuse: **N.V.** Sharing: **N.V.** |
-| Privacy | **Observed:** no NRIC-like numbers. 3 organisational email addresses (`enquiry@ssm.com.my`, `refund@ssm.com.my`, `customercare@digicert.com.my`) and 2 phone numbers in S03. Whether they identify individuals: **N.V.** They are not needed for Lapora. |
-| Consent / basis | Not applicable: public guidance, no data collected from individuals. |
-| Maintenance | Owner: me (Akma). Revalidate on a new SSM document version or any change to the chunking rules. |
-| Safeguard (required) | Raw files and prepared text stay out of GitHub (`.gitignore`); only manifests and checksums are committed. Strip or exclude contact lines before the index is built. |
-
-## 7. Mitigation and Impact on Requirements
-
-| # | Priority improvement | Owner / when | Requirements affected |
-|---|---|---|---|
-| 1 | Replace the fixed-size fallback with sentence-aware splitting plus overlap; re-run V1 and V2 (target 0 mid-word cuts) and confirm `S01-0073/0074` are retrievable as one rule. | Akma, **before Topic 5 embeddings** | FR3, FR4, RAI1; O1 citation validity, O2 error-catch |
-| 2 | (a) Ask SSM which FAQ version is current and whether newer versions of S01–S03 exist; confirm reuse rights. (b) Add the SSMxT XBRL concept list as a new audited source. | Akma (with supervisor), before any FR2 or NFR1 testing | FR2, FR3, NFR1, RAI1 |
-
-**Residual risks:** guidance may be out of date (N.V.); S02/S03 pages may differ from the original PDFs (N.V.); sample accuracy (n = 15) does not establish whole-corpus accuracy; keyword coverage is not adequacy.
-
-## 8. Quality-Gate Decision
-
-**GO WITH CONDITIONS** for the scope audited: the three prepared guidance-text files (S01–S03), for **internal** use in the next stage. This does **not** cover the FR2 concept list, which has no data yet, and does not allow sharing the texts.
-
-**Evidence:** V1 passed 744/744, uniqueness is clean, and 15/15 sampled chunks match the source. **But** V2 failed on 252 boundaries, including the FR4 rule.
-**Conditions:** (1) pass V2 after re-chunking before embeddings; (2) rights and version confirmation before anything is shared or cited as authoritative.
-**Re-review triggers:** new SSM document versions; any change to chunking; adding the concept list; V1 or V2 failing on re-run.
-
----
-
-### Appendix — evidence
-- Topic 3: `notebooks/week3_pipeline.ipynb` (Cells A3, 5A1, 6B, 9), `docs/week3_data_inventory.md`, `docs/week3_pipeline_decisions.md`, `data/week3_manifest.json`.
-- Topic 4 checks (recomputed from the Part C JSONL with the Topic 3 functions; no new pipeline): V1 744/744; V2 252 (11 / 45 / 196); duplicates 0; accuracy sample `S01-0073, 0126, 0052, 0060, 0035`; `S02-0126, 0027, 0122, 0144, 0060`; `S03-0051, 0169, 0074, 0062, 0037`.
+Unresolved issues stay in the record: mid-word cuts (flagged in `quality_flags`), timeliness N.V., rights N.V.
